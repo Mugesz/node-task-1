@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.static("timestamps"));
 
-let dateString = new Date().toUTCString().slice(0, -3);
+let dateString = new Date().toString().slice(0, -3);
 
 const folderName = '/users/kanna/node-task-1/timestamp';
 try {
